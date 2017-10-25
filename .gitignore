@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/command_line/golumn/node_modules
 
 # testing
 /coverage

@@ -1,0 +1,21 @@
+{
+  "name": "golumn",
+  "version": "1.0.0",
+  "description": "Golumn takes in piped data, determines the data type, and provides the data to the golumn viewer electron app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "golumn": "./index.js"
+  },
+  "author": "Devin Stallings",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "commander": "^2.11.0",
+    "fs": "^0.0.1-security",
+    "shelljs": "^0.7.8",
+    "tmp": "^0.0.33"
+  }
+}
