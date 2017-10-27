@@ -1,7 +1,7 @@
 #!/bin/bash
-APP_NAME="golumnv"
+APP_NAME="golumn"
 APP="$APP_NAME.app"
-BUNDLE_IDENTIFIER="golumnv"
+BUNDLE_IDENTIFIER="golumn"
 
 if [ "$(uname)" == 'Darwin' ]; then
 	OS='Mac'

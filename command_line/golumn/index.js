@@ -10,14 +10,7 @@ let electronPath = '';
 golumn
   .version('0.1.0')
   .option('-h, --help', 'Get help!')
-
-golumn
-  .command('path [path]')
-  .description('Provide the path to the unbuilt electron app. This is for development purposes')
-  .action(function(path){
-    electronPath = path;
-  });
-
+  .option('-d, --dev', 'Dev mode. This helps the golumn find look for the project folder instead of the electron executable')
 golumn.parse(process.argv);
 
 let data = '';
@@ -59,7 +52,7 @@ const writeDataToTmp = function(tmpPath, data) {
 
 
 const openApp = function(path) {
-  if (!electronPath) {
+  if (!golumn.dev) {
 
     // Find the golumnv path
     const appPath = exec('sh app_path.sh');
@@ -75,7 +68,7 @@ const openApp = function(path) {
     });
   }
   else {
-    shell.cd(electronPath);
+    shell.cd('../../');
     shell.exec(`electron . --csv=${path}`)
     shell.exit(1);
   }
