@@ -12,7 +12,6 @@ Golumn is a desktop application for viewing data provided from the terminal.
   * `npm install -g`
   * `npm link`
 * Now the golumn-cli should be available globally.
-* For development purposes you must provide a path to the
 
 Here is how to execute golumn in your terminal:
 * `cat ~/Documents/test.csv | golumn --dev`
@@ -23,4 +22,4 @@ Here is how to execute golumn in your terminal:
 * `npm run electron-pack`
 * The application installer and executable will be generated in the `dist` folder.
 
-NOTE: The golumn command line app should look for the electron executable. This is still a work in progress. The electron app currently does note install the golumn-cli when it starts.
+NOTE: The golumn command line app should look for the electron executable. This is still a work in progress. The electron app currently does not install the golumn-cli when it starts.
