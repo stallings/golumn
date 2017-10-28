@@ -8,7 +8,8 @@ Golumn is a desktop application for viewing data provided from the terminal.
 
 **Installing and running Golumn CLI**
 * From the root of the project:
-  * `cd /command_line/golumn`
+  * `cd /golumn_cli`
+  * `yarn install`
   * `npm install -g`
   * `npm link`
 * Now the golumn-cli should be available globally.
